@@ -61,6 +61,7 @@
   background-color: white;
   margin-top: 120px;
   border-radius: 80px 80px 0px 0px;
+  height: 1000px;
  }
 
  .darkSection {
@@ -68,13 +69,13 @@
   background-color: #1E2731;
   margin-top: 120px;
   border-radius: 80px 80px 0px 0px;
+  margin-top: -200px;
  }
 
  .contentHolder {
   padding-left: 100px;
   padding-right: 100px;
   padding-top: 50px;
-  margin-bottom: 100px;
  }
 
  .sectionInfo {
@@ -92,10 +93,24 @@
   color: #1E2731;
  }
 
+ .sectionHeadDark {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Russo One', sans-serif;
+  line-height: 50px;
+  color: #009AFA;
+ }
+
  .sectionNumbers {
   font-size: 60px;
   font-weight: bold;
   color: #1E2731;
+ }
+
+ .sectionNumbersDark {
+  font-size: 60px;
+  font-weight: bold;
+  color: #009AFA;
  }
 
  .aboutBox {
@@ -128,17 +143,54 @@
    color: white;
  }
 
- .sectionHeadDark {
-  font-size: 60px;
-  font-weight: bold;
-  font-family: 'Russo One', sans-serif;
-  line-height: 50px;
+ .myProjectsHeading {
   color: #009AFA;
+  font-family: 'Russo One', sans-serif;
+  font-size: 45px;
+  margin-top: 60px;
  }
 
- .sectionNumbersDark {
-  font-size: 60px;
-  font-weight: bold;
-  color: #009AFA;
+ .projectBox {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 20px 30px 20px 30px;
  }
+
+ .projectImg {
+  width: 30%;
+  margin-right: 2%;
+ }
+
+ .projectImg img {
+  width: 100%;
+ }
+
+ .projectDescription {
+  align-self: center;
+ }
+
+ .projectDescription p {
+  font-size: 30px;
+  color: #1E2731;
+ }
+
+ .darkStrong {
+  color: #1E2731;
+ }
+
+ .projectButton {
+  background-color: #009AFA;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 10px;
+  margin-top: 2%;
+  padding: 12px
+ }
+
+
 
