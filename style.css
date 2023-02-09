@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; 
+    text-decoration: none;
+    color: #ccc;
+  }
+
+ body {
+  background-color: #1E2731;
+  font-family: 'Montserrat', sans-serif;
+ }
+
+ .header {
+  margin-top: 60px;
+  padding-left: 100px;
+  padding-right: 100px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+ }
+
+ .navButton {
+  color: white;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+  padding: 14px 32px 14px 32px;
+  font-weight: 900;
+  text-transform: capitalize;
+ }
+
+ .hero {
+  margin-top: 100px;
+  width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
+ }
+
+ .topHero {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  margin-bottom: -70px;
+ }
+
+ .topHero img {
+  height: 150px;
+ }
+
+ .heroText {
+  text-transform: uppercase;
+  font-size: 10.313rem;
+  font-weight: 900;
+  color: white;
+ }
+
+ .whiteSection {
+  display: flex;
+  background-color: white;
+  margin-top: 120px;
+  border-radius: 80px 80px 0px 0px;
+ }
+
+ .darkSection {
+  display: flex;
+  background-color: #1E2731;
+  margin-top: 120px;
+  border-radius: 80px 80px 0px 0px;
+ }
+
+ .contentHolder {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 50px;
+  margin-bottom: 100px;
+ }
+
+ .sectionInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+
+ .sectionHead {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Russo One', sans-serif;
+  line-height: 50px;
+  color: #1E2731;
+ }
+
+ .sectionNumbers {
+  font-size: 60px;
+  font-weight: bold;
+  color: #1E2731;
+ }
+
+ .aboutBox {
+  width: 100%;
+  background-color: #1E2731;
+  box-shadow: 0px 0px 80px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 20px 30px;
+ }
+
+ .aboutTop {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 40px;
+ }
+
+ .aboutTop p {
+  color: white;
+  align-self: center;
+  font-family: 'Russo One', sans-serif;
+  font-size: 28px;
+ }
+
+ div {
+   color: white;
+ }
+
+ .sectionHeadDark {
+  font-size: 60px;
+  font-weight: bold;
+  font-family: 'Russo One', sans-serif;
+  line-height: 50px;
+  color: #009AFA;
+ }
+
+ .sectionNumbersDark {
+  font-size: 60px;
+  font-weight: bold;
+  color: #009AFA;
+ }
+
