@@ -10,6 +10,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
     <title>Chase McQuown's Portfolio</title>
 </head>
@@ -18,8 +20,8 @@
 	<!-- NAV/HEADER ELEMENTS -->
 	<div class="header">
 		<div><img src="assets/Frame 49.svg" style="height: 47px"></div>
-		<div class="navButton">ABOUT ME</div>
-		<div class="navButton">UX/UI</div>
+		<a href="#about-me"><div class="navButton">ABOUT ME</div></a>
+		<a href="#ux-ui"><div class="navButton">UX/UI</div></a>
 		<div class="navButton">WEB DEV</div>
 		<div class="navButton">DIGITAL MARKETING</div>
 	</div>
@@ -27,15 +29,15 @@
 	<!-- HERO SECTION -->
 	<div class="hero">
 		<div class="topHero">
-			<div class="heroText">Chase<img src="assets/pen-nib-solid 1.svg"><img src="assets/code-solid 1.svg"><img src="assets/lightbulb-regular 1.svg"></div>
+			<div class="heroText">Chase<img src="assets/pen-nib-solid 1.svg" class="animate__animated animate__pulse" style="animation-iteration-count: infinite;"><img src="assets/code-solid 1.svg" class="animate__animated animate__pulse" style="animation-iteration-count: infinite;"><img src="assets/lightbulb-regular 1.svg"  class="animate__animated animate__pulse" style="animation-iteration-count: infinite;"></div>
 		</div>
 		<div class="heroText">McQuown.</div>
 	</div>
 
 	<!-- ABOUT ME SECTION -->
-	<div class="whiteSection">
+	<div class="whiteSection" data-aos="fade-up" data-aos-once="true">
 
-		<div class="contentHolder">
+		<div class="contentHolder" id="about-me">
 			<div class="sectionInfo">
 				<div class="sectionHead">ABOUT<br>ME</div>
 				<div class="sectionNumbers">1 <span >2 3 4</span></div>
@@ -52,23 +54,31 @@
 	</div>
 
 	<!-- UX/UI SECTION -->
-	<div class="darkSection">
+	<div class="darkSection" data-aos="fade-up" data-aos-once="true">
 
-		<div class="contentHolder">
+		<div class="contentHolder" id="ux-ui">
 			<div class="sectionInfo">
 				<div class="sectionHeadDark">UX/<br>UI</div>
-				<div class="sectionNumbersDark">1 <span >2 3 4</span></div>
+				<div class="sectionNumbersDark"><span>1</span> 2 <span>3 4</span></div>
 			</div>
 
 			<div class="myProjectsHeading">MY PROJECTS</div>
 
 			<div class="projectBox">
 				<div class="projectImg"><img src="assets/Frame 52.png" alt=""></div>
-				<div class="projectDescription"><p><strong class="darkStrong">chefsy -</strong> mobile app prototype</p><p><strong class="darkStrong">skills:</strong><br>user research, wireframing, and prototyping </p><p><strong class="darkStrong">tools & tech:</strong><br>pen and paper, Miro, Figma, InVision, Trello, Slack</p><div class="projectButton">VIEW CASE STUDY</div></div>
+				<div class="projectDescription"><p style="margin-bottom: 1.5%;"><strong class="darkStrong">chefsy -</strong> mobile app prototype</p><p style="margin-bottom: 1.5%;"><strong class="darkStrong">skills:</strong><br>user research, wireframing, and prototyping </p><p style="margin-bottom: 1.5%;"><strong class="darkStrong">tools & tech:</strong><br>pen and paper, Miro, Figma, InVision, Trello, Slack</p><div class="projectButton">VIEW CASE STUDY</div></div>
 			</div>
 		</div>
 
 	</div>
+
+
+	<!-- ANIMATIONS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
 
 </body>
 </html>
