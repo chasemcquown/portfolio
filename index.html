@@ -19,23 +19,23 @@
 
 
 	<!-- HEADER -->
-	<div class="header">
+	<div class="header" id="header">
 		<img src="assets/CM.svg" alt="">
-		<button class="navBtn">ABOUT ME</button>
-		<button class="navBtn">UX/UI</button>
-		<button class="navBtn">WEB DEV</button>
-		<button class="navBtn">DIGITAL MARKETING</button>
+		<a href="#i-do"><button class="navBtn">ABOUT ME</button></a>
+		<a href="#ux-ui"><button class="navBtn">UX/UI</button></a>
+		<a href=""><button class="navBtn">WEB DEV</button></a>
+		<a href=""><button class="navBtn">DIGITAL MARKETING</button></a>
 	</div>
 
 	<!-- HERO SECTION -->
 	<div class="hero">
-		<img src="assets/CHASE MCQUOWN..svg" alt="">
+		<img src="assets/CHASE MCQUOWN..svg" alt="" class="animate__animated animate__jackInTheBox">
 	</div>
 
 	<!-- I DO SECTION -->
 	<div id="i-do" class="i-do">
-		<h2>I DO...</h2>
-		<div class="what-i-do">
+		<h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">I DO...</h2>
+		<div class="what-i-do" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
 			<div>
 				<img src="assets/pen.svg" alt="" class="animate__animated animate__pulse" style="animation-duration: 2s; animation-iteration-count: infinite;">
 				<p>ux/ui design</p>
@@ -53,8 +53,8 @@
 
 	<!-- I KNOW SECTION -->
 	<div id="i-know" class="i-know">
-		<h2>I KNOW...</h2>
-		<div class="what-i-do">
+		<h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">I KNOW...</h2>
+		<div class="what-i-do" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
 			<div>
 				<img src="assets/figma.svg" alt="" class="animate__animated animate__swing" style="animation-duration: 8s; animation-iteration-count: infinite;">
 			</div>
@@ -84,7 +84,7 @@
 
 	<!-- UX/UI SECTION -->
 	<div id="ux-ui" class="ux-ui">
-		<h2>UX/<br>UI</h2>
+		<h2 style="margin-top: 5%; margin-bottom: 3%;">UX/<br>UI</h2>
 		<div class="project-container">
 			<div class="project-img"><img src="assets/hyde.png" alt=""></div>
 			<div class="project-info">
@@ -99,7 +99,7 @@
 		</div>
 		<div class="project-container">
 			<div class="project-info">
-				<p><span style="color: #FF5C00; font-weight: bold;">HYDE |</span> a 100% custom complete site design</p>
+				<p><span style="color: #FF5C00; font-weight: bold;">NECKSLEVEL |</span> custom site redesign</p>
 				<p><span style="font-weight: bold;">SKILLS:</span> wireframing, layout design, form flows</p>
 				<p><span style="font-weight: bold;">TECH:</span> Figma, Slack, Asana, Notion</p>
 				<div>
@@ -107,7 +107,19 @@
 					<button class="project-btn">LIVE SITE</button>
 				</div>
 			</div>
+			<div class="project-img"><img src="assets/neckslevel.png" alt=""></div>
+		</div>
+		<div class="project-container">
 			<div class="project-img"><img src="assets/hyde.png" alt=""></div>
+			<div class="project-info">
+				<p><span style="color: #FF5C00; font-weight: bold;">CHEFSY |</span> a 100% custom complete site design</p>
+				<p><span style="font-weight: bold;">SKILLS:</span> wireframing, layout design, form flows</p>
+				<p><span style="font-weight: bold;">TECH:</span> Figma, Slack, Asana, Notion</p>
+				<div>
+					<button class="project-btn">VIEW PROTOTYPE</button>
+					<button class="project-btn">VIEW CASE STUDY</button>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -115,6 +127,9 @@
 
 	<!-- DIGITAL MARKETING SECTION -->
 
+
+	<!-- MY SCRIPT FILE -->
+	<script src="script.js"></script>
 
 	<!-- ANIMATIONS -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
