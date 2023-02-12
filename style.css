@@ -104,7 +104,7 @@
   left    : 0;
   bottom  : 0;
   height  : 15px;
-  width   : 70%;
+  width   : 30%;
   border-bottom:5px solid #FF5C00;
  }
 
@@ -180,6 +180,10 @@
   border-bottom:5px solid white;
  }
 
+ .project-container:nth-child(4)::before {
+  border-bottom: none;
+ }
+
  .project-container p {
   color: white;
   font-size: 1.7em;
@@ -210,4 +214,75 @@
 
  .project-btn:hover {
   border: 2px solid white;
+ }
+
+ /* WEB DEV SECTION STYLES */
+ .web-dev {
+  background-color: white;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+ }
+
+ .web-dev h2 {
+  font-size: 3em;
+  font-weight: 900;
+  color: black;
+  line-height: 37px;
+ }
+
+ .web-dev .project-container .project-info p {
+  color: black;
+ }
+
+ .web-dev .project-container .project-info div .project-btn:hover {
+  background: none;
+  border: 2px solid black;
+ }
+
+ .web-dev .project-container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  padding-left: 3.5%;
+  padding-right: 3.5%;
+  gap: 50px;
+  position: relative;
+ }
+
+ .web-dev .project-container::before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 15px;
+  width   : 45%;
+  border-bottom:5px solid black;
+ }
+
+ .web-dev .project-container:nth-child(3)::before {
+  border-bottom: none;
+ }
+
+ /* DIGITAL MARKETING SECTION STYLES */
+ .digital-marketing {
+  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
+  background-color: black;
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+ }
+
+ .digital-marketing h2 {
+  font-size: 3em;
+  font-weight: 900;
+  color: white;
+  line-height: 37px;
+ }
+
+ .digital-marketing .project-container:nth-child(3)::before {
+  border-bottom: none;
  }
