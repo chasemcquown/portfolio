@@ -164,7 +164,6 @@
   flex-direction: row;
   padding-top: 5%;
   padding-bottom: 3%;
-  padding-left: 3.5%;
   padding-right: 3.5%;
   gap: 50px;
   position: relative;
@@ -218,7 +217,7 @@
 
  /* WEB DEV SECTION STYLES */
  .web-dev {
-  background-color: white;
+  background-color: #FF5C00;
   padding-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
@@ -228,17 +227,22 @@
  .web-dev h2 {
   font-size: 3em;
   font-weight: 900;
-  color: black;
+  color: white;
   line-height: 37px;
  }
 
  .web-dev .project-container .project-info p {
+  color: white;
+ }
+
+ .web-dev .project-container .project-info div .project-btn {
   color: black;
+  border: 2px solid black;
  }
 
  .web-dev .project-container .project-info div .project-btn:hover {
   background: none;
-  border: 2px solid black;
+  border: 2px solid white;
  }
 
  .web-dev .project-container {
@@ -246,7 +250,6 @@
   flex-direction: row;
   padding-top: 5%;
   padding-bottom: 3%;
-  padding-left: 3.5%;
   padding-right: 3.5%;
   gap: 50px;
   position: relative;
@@ -259,7 +262,7 @@
   bottom  : 0;
   height  : 15px;
   width   : 45%;
-  border-bottom:5px solid black;
+  border-bottom:5px solid white;
  }
 
  .web-dev .project-container:nth-child(3)::before {
@@ -268,7 +271,6 @@
 
  /* DIGITAL MARKETING SECTION STYLES */
  .digital-marketing {
-  clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
   background-color: black;
   padding-top: 10%;
   padding-left: 10%;
