@@ -1,16 +1,13 @@
+window.onscroll = function() {myFunction()};
+
 var header = document.getElementById("header");
 var sticky = header.offsetTop;
 
-let oldScrollY = window.scrollY;
-
-
-window.onscroll = function(e) {
-  if (oldScrollY < window.scrollY) {
-    header.classList.remove("sticky");
-  } else {
-    console.log(window.pageYOffset)
+function myFunction() {
+  if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    document.querySelector(".header").style.backgroundColor = 'rgba(255, 255, 255, 0.85)';
+    header.style.background = "rgba(255, 255, 255, 0.65);"
+  } else {
+    header.classList.remove("sticky");
   }
-  oldScrollY = window.scrollY;
 }
