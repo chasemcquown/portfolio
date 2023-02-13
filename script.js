@@ -10,7 +10,7 @@ window.onscroll = function(e) {
   } else {
     console.log(window.pageYOffset)
     header.classList.add("sticky");
-    document.querySelector(".header").style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+    document.querySelector(".header").style.backgroundColor = 'rgba(255, 255, 255, 0.85)';
   }
   oldScrollY = window.scrollY;
 }

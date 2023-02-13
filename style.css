@@ -162,6 +162,7 @@
  .project-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   padding-top: 5%;
   padding-bottom: 3%;
   padding-right: 3.5%;
@@ -218,7 +219,7 @@
  /* WEB DEV SECTION STYLES */
  .web-dev {
   background-color: #FF5C00;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 3%;
@@ -271,11 +272,12 @@
 
  /* DIGITAL MARKETING SECTION STYLES */
  .digital-marketing {
+  clip-path: polygon(0 0, 100% 0, 100% 97%, 0 94%);
   background-color: black;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 3%;
+  padding-bottom: 4.5%;
  }
 
  .digital-marketing h2 {
@@ -287,4 +289,45 @@
 
  .digital-marketing .project-container:nth-child(3)::before {
   border-bottom: none;
+ }
+
+ /* FOOTER STYLES */
+ .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 1%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 6%; 
+ }
+
+ .left-border {
+  position: relative;
+  padding-left: 1.6%;
+ }
+
+ .left-border::before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  top     : 0;
+  height  : 70px;
+  width   : 50%;
+  border-left:5px solid black;
+ }
+
+ .footer-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 1%;
+ }
+
+ .footer-icons img {
+  width: 4%;
+ }
+
+ .footer-icons img:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
  }
