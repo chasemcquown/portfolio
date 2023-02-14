@@ -73,6 +73,9 @@
 
  /* I DO STYLES */
  .i-do {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
   background-color: black;
   padding-top: 10%;
@@ -131,6 +134,9 @@
 
  /* I KNOW STYLES */
  .i-know {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-color: #FF5C00;
   padding-top: 10%;
@@ -147,6 +153,9 @@
 
  /* I PRACTICE STYLES */
  .i-practice {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   padding-top: 10%;
   padding-left: 10%;
   padding-right: 10%;
@@ -168,6 +177,9 @@
 
  /* UX/UI STYLES */
  .ux-ui {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
   background-color: black;
   padding-top: 10%;
@@ -239,6 +251,9 @@
 
  /* WEB DEV SECTION STYLES */
  .web-dev {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: #FF5C00;
   padding-top: 5%;
   padding-left: 10%;
@@ -293,6 +308,9 @@
 
  /* DIGITAL MARKETING SECTION STYLES */
  .digital-marketing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 97%, 0 94%);
   background-color: black;
   padding-top: 5%;
@@ -358,6 +376,10 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
  }
 
+ .main-header { 
+  display: none;
+ }
+
  /* MEDIA QUERIES */
  @media only screen and (min-width: 320px) and (max-width: 480px) {
 
@@ -367,24 +389,20 @@
       display: none;
     }
   
-    .wrapper header {
+    .main-header {
       display: contents;
     }
-  
-    .wrapper{
-      max-width: 96.87em;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-      margin: 0 auto;
-      width: 100%;
+
+    nav {
+      padding-right: 10%;
+      padding-left: 10%;
     }
   
     .main-header nav {
       padding-top: 2em;
     }
   
-    .masthead{
+    .masthead {
       align-items: center;
       display: flex;
       justify-content: space-between;
@@ -397,11 +415,9 @@
     .main-header a{
       color: white;
       letter-spacing: 3px;
-      /* margin-left: 15px; */
     }
   
-    .main-header a:hover,
-    .active{
+    .main-header a:hover {
       color: black;
     }
   
@@ -409,7 +425,6 @@
         cursor: pointer;
         display: block;
         width: 30px;
-        /* margin-right: 15px; */
     }
   
     .burger div{
@@ -483,54 +498,26 @@
         transition-duration: .1s;
     }
 
-
     .what-i-do {
-      width: 10%;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       margin-top: 5%;
       margin-bottom: 7%;
-     }
+    }
 
-     .digital-marketing {
-      clip-path: none;
-      background-color: black;
-      padding-top: 5%;
-      padding-left: 10%;
-      padding-right: 10%;
-      padding-bottom: 4.5%;
-     }
+    .what-i-do-mobile {
+      flex-direction: row;
+    }
 
-     .ux-ui {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      background-color: black;
-      padding-top: 10%;
-      padding-left: 0%;
-      padding-right: 0%;
-      padding-bottom: 3%;
-     }
+    .do-icons {
+      width: 10%;
+    }
 
-     .i-know {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      background-color: #FF5C00;
-      padding-top: 10%;
-      padding-left: 0%;
-      padding-right: 0%;
-      padding-bottom: 3%;
-     }
+    .do-icons img {
+      width: 5%;
+    }
 
-     .i-do {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-      background-color: black;
-      padding-top: 10%;
-      padding-left: 0%;
-      padding-right: 0%;
-      padding-bottom: 3%;
-     }
-
-     .digital-marketing, .ux-ui, .i-know, .i-do {
-      clip-path: none;
-     }
  }

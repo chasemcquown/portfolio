@@ -12,11 +12,3 @@ function myFunction() {
     header.classList.remove("sticky");
   }
 }
-
-// MODAL LOGIC
-function showModal() {
-  document.getElementById('id01').style.display='block'
-  
-};
-
-showModal();
