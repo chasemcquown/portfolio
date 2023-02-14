@@ -24,7 +24,7 @@
   padding-bottom: 1.5%;
   padding-left: 10%;
   padding-right: 10%;
-  z-index: 99999;
+  z-index: 999;
   background: rgba(255, 255, 255, 0.8);
  }
 
@@ -53,6 +53,11 @@
   transform: scale(1.01);
  }
 
+ .wrapper header {
+  display: none;
+}
+
+ /* HERO STYLES */
  .hero {
   display: flex;
   width: 100%;
@@ -66,6 +71,7 @@
   width: 100%;
  }
 
+ /* I DO STYLES */
  .i-do {
   clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
   background-color: black;
@@ -82,6 +88,7 @@
   line-height: 37px;
  }
 
+ /* WHAT I DO STYLES */
  .what-i-do {
   width: 100%;
   display: flex;
@@ -101,6 +108,10 @@
   padding-bottom: 1.5%;
  }
 
+ .what-i-do div img {
+  width: 50%;
+ }
+
  .what-i-do div:before {
   content : "";
   position: absolute;
@@ -118,6 +129,7 @@
   font-weight: 500;
  }
 
+ /* I KNOW STYLES */
  .i-know {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-color: #FF5C00;
@@ -133,6 +145,7 @@
   color: white;
  }
 
+ /* I PRACTICE STYLES */
  .i-practice {
   padding-top: 10%;
   padding-left: 10%;
@@ -153,6 +166,7 @@
   font-weight: 500;
  }
 
+ /* UX/UI STYLES */
  .ux-ui {
   clip-path: polygon(0 7%, 100% 0, 100% 100%, 0 100%);
   background-color: black;
@@ -163,9 +177,11 @@
  }
 
  .project-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   padding-top: 5%;
   padding-bottom: 3%;
   padding-right: 3.5%;
@@ -340,4 +356,181 @@
 
  .footer-icons img:hover {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+ }
+
+ /* MEDIA QUERIES */
+ @media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* MOBILE NAV STYLES */
+
+    #header {
+      display: none;
+    }
+  
+    .wrapper header {
+      display: contents;
+    }
+  
+    .wrapper{
+      max-width: 96.87em;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0 auto;
+      width: 100%;
+    }
+  
+    .main-header nav {
+      padding-top: 2em;
+    }
+  
+    .masthead{
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.5em;
+    }
+    .masthead img {
+      width: 20%;
+    }
+  
+    .main-header a{
+      color: white;
+      letter-spacing: 3px;
+      /* margin-left: 15px; */
+    }
+  
+    .main-header a:hover,
+    .active{
+      color: black;
+    }
+  
+    .burger{
+        cursor: pointer;
+        display: block;
+        width: 30px;
+        /* margin-right: 15px; */
+    }
+  
+    .burger div{
+        background-color: black;
+        border-radius: 25px;
+        height: 2.3px;
+        transition-duration: .25s;
+        transition-timing-function: cubic-bezier(.6,.13,.32,1.46);
+    }
+  
+    .burger .one,
+    .burger .two{
+        margin-bottom: 8px;
+    }
+  
+    .main-nav-list{
+        z-index: 999;
+        background-color: black;
+        position: fixed;
+        width: 100%;
+        padding: 4%;
+        transition-property: transform;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition-duration: .25s;
+        transition-timing-function: cubic-bezier(.6,.13,.32,1.46);  
+    }
+  
+    .main-nav-list a{
+        display: block;
+        font-size: 1.2em;
+        margin-bottom: 8px;
+        transition-property: opacity;
+        opacity: 0;
+        transition-duration: .15s;
+    }
+  
+    .menu-toggle{
+        display: none;
+    }
+  
+  
+    #input__menu-toggle:checked ~ .masthead .burger .one{
+        box-shadow: 1px .4px 10px rgba(0,0,0,.25);
+        transform-origin: left;
+        transform: translate(15%, -5px) rotate(45deg);
+    }
+  
+    #input__menu-toggle:checked ~ .masthead .burger .two{
+        background-color: transparent;
+        box-shadow: none;
+    }
+  
+    #input__menu-toggle:checked ~ .masthead .burger .three{
+        background-color: var(--secondary-color);
+        box-shadow: 1px .4px 10px rgba(0,0,0,.25);
+        transform-origin: left;
+        transform: translate(14%, 2px) rotate(-45deg); 
+    }
+  
+    #input__menu-toggle:checked ~.main-nav-list{
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.14);
+        transform:scale(1,1);
+    }
+  
+  
+    #input__menu-toggle:checked ~ .main-nav-list a{
+        transition-property: opacity;
+        opacity: 1;
+        transition-delay: .2s;
+        transition-duration: .1s;
+    }
+
+
+    .what-i-do {
+      width: 10%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5%;
+      margin-bottom: 7%;
+     }
+
+     .digital-marketing {
+      clip-path: none;
+      background-color: black;
+      padding-top: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 4.5%;
+     }
+
+     .ux-ui {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      background-color: black;
+      padding-top: 10%;
+      padding-left: 0%;
+      padding-right: 0%;
+      padding-bottom: 3%;
+     }
+
+     .i-know {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      background-color: #FF5C00;
+      padding-top: 10%;
+      padding-left: 0%;
+      padding-right: 0%;
+      padding-bottom: 3%;
+     }
+
+     .i-do {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      background-color: black;
+      padding-top: 10%;
+      padding-left: 0%;
+      padding-right: 0%;
+      padding-bottom: 3%;
+     }
+
+     .digital-marketing, .ux-ui, .i-know, .i-do {
+      clip-path: none;
+     }
  }
