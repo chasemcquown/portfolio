@@ -28,31 +28,22 @@
 		<a href="#digital-marketing"><button class="navBtn">DIGITAL MARKETING</button></a>
 	</div>
 
-	<!-- MOBILE MENU -->
-		<header class="main-header">
-			<nav>
-				<input type="checkbox" name="" id="input__menu-toggle" class="menu-toggle">
-				<div class="masthead">
-					<img src="assets/CM.svg" alt="">
-					<label for="input__menu-toggle" class="label-for-menu">
-						<div class="burger">
-							<div class="one"></div>
-							<div class="two"></div>
-							<div class="three"></div>
-						</div>
-					</label>
-				</div>
 	
-				<div class="main-nav-list">
-					<ul>
-						<li><a href="#">ABOUT ME</a></li>
-						<li><a href="about-me.html">UX/UI</a></li>
-						<li><a href="what-I-do/ux-ui.html">WEB DEV</a></li>
-						<li><a href="what-I-do/web-development.html">DIGITAL MARKETING</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
+
+	<!-- MOBILE MENU -->
+
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+		  <a href="#">About</a>
+		  <a href="#">Services</a>
+		  <a href="#">Clients</a>
+		  <a href="#">Contact</a>
+		</div>
+	</div>
+
+
+	<div class="hamburger-holder"><span id="mobile-menu" style="font-size:30px;cursor:pointer" onclick="openNav()"><img src="assets/CM.svg" alt="">&#9776;</span></div>
 
 	<!-- HERO SECTION -->
 	<div class="hero">
@@ -61,8 +52,8 @@
 
 	<!-- I DO SECTION -->
 	<div id="i-do" class="i-do">
-		<h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">I DO...</h2>
-		<div class="what-i-do" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+		<h2 data-aos="zoom-in-up">I DO...</h2>
+		<div class="what-i-do">
 			<div class="do-icons">
 				<img src="assets/pen.svg" alt="" class="animate__animated animate__pulse" style="animation-duration: 2s; animation-iteration-count: infinite;" style="width: 2%">
 				<p>ux/ui design</p>
@@ -80,8 +71,8 @@
 
 	<!-- I KNOW SECTION -->
 	<div id="i-know" class="i-know">
-		<h2 data-aos="fade-right" data-aos-once="true" data-aos-duration="1000">I KNOW...</h2>
-		<div class="what-i-do what-i-do-mobile" data-aos="fade-left" data-aos-once="true" data-aos-duration="1000">
+		<h2>I KNOW...</h2>
+		<div class="what-i-do what-i-do-mobile">
 			<div>
 				<img src="assets/figma.svg" alt="" class="animate__animated animate__swing" style="animation-duration: 8s; animation-iteration-count: infinite;">
 			</div>
@@ -105,14 +96,14 @@
 
 	<!-- I PRACTICE -->
 	<div id="i-practice" class="i-practice">
-		<h2 data-aos="zoom-in-right" data-aos-duration="1000" data-aos-once="true">I PRACTICE...</h2>
-		<p data-aos="zoom-in-left" data-aos-duration="1200" data-aos-once="true">Qualitative & quantitative research, information architecture & flow, user experience interviewing, persona creation, insight synthesis, wireframing, storyboarding, decision mapping, and interaction design.</p>
+		<h2>I PRACTICE...</h2>
+		<p>Qualitative & quantitative research, information architecture & flow, user experience interviewing, persona creation, insight synthesis, wireframing, storyboarding, decision mapping, and interaction design.</p>
 	</div>
 
 	<!-- UX/UI SECTION -->
 	<div class="ux-ui">
-		<h2 id="ux-ui" style="margin-top: 5%; margin-bottom: 3%;" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">UX/<br>UI</h2>
-		<div class="project-container" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+		<h2 id="ux-ui" style="margin-top: 5%; margin-bottom: 3%;">UX/<br>UI</h2>
+		<div class="project-container">
 			<div class="project-img"><img src="assets/hyde.png" alt="" class="animate__animated animate__pulse" style="animation-duration: 7s; animation-iteration-count: infinite;"></div>
 			<div class="project-info">
 				<p style="font-weight: lighter;"><span style="color: #FF5C00; font-weight: bold;">HYDE |</span> complete custom site design</p>
@@ -124,7 +115,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-container" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+		<div class="project-container">
 			<div class="project-img"><img src="assets/neckslevel.png" alt="" class="animate__animated animate__pulse" style="animation-duration: 5s; animation-iteration-count: infinite;"></div>
 			<div class="project-info">
 				<p style="font-weight: lighter;"><span style="color: #FF5C00; font-weight: bold;">NECKSLEVEL |</span> complete custom site redesign</p>
@@ -136,7 +127,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-container" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+		<div class="project-container">
 			<div class="mobile-project-img"><img src="assets/chefsy.png" alt="" class="animate__animated animate__pulse" style="animation-duration: 8s; animation-iteration-count: infinite;"></div>
 			<div class="project-info">
 				<p style="font-weight: lighter;"><span style="color: #FF5C00; font-weight: bold;">CHEFSY |</span> mobile app prototype</p>
@@ -152,8 +143,8 @@
 
 	<!-- WEB DEV SECTION -->
 	<div class="web-dev">
-		<h2 id="web-dev" style="margin-top: 1%; margin-bottom: 3%;" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">WEB<br>DEV</h2>
-		<div class="project-container" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+		<h2 id="web-dev" style="margin-top: 1%; margin-bottom: 3%;">WEB<br>DEV</h2>
+		<div class="project-container">
 			<div class="mobile-project-img"><img src="assets/simple-wx.png" alt="" class="animate__animated animate__pulse" style="animation-duration: 7s; animation-iteration-count: infinite;"></div>
 			<div class="project-info">
 				<p style="font-weight: lighter;"><span style="color: black; font-weight: bold;">SIMPLE WX |</span> responsive weather app</p>
@@ -165,7 +156,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-container" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+		<div class="project-container">
 			<div class="mobile-project-img"><img src="assets/barnabas.png" alt="" class="animate__animated animate__pulse" style="animation-duration: 5s; animation-iteration-count: infinite;"></div>
 			<div class="project-info">
 				<p style="font-weight: lighter;"><span style="color: black; font-weight: bold;">FARMGO |</span> MERN stack application</p>
@@ -180,8 +171,8 @@
 
 	<!-- DIGITAL MARKETING SECTION -->
 	<div class="digital-marketing">
-		<h2 id="digital-marketing" style="margin-top: 5%; margin-bottom: 3%;" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">DIGITAL<br>MARKETING</h2>
-		<div class="project-container" data-aos="fade-left" data-aos-duration="1200" data-aos-once="true">
+		<h2 id="digital-marketing" style="margin-top: 5%; margin-bottom: 3%;">DIGITAL<br>MARKETING</h2>
+		<div class="project-container">
 			<div class="mobile-project-img"><img src="assets/alamo.png" alt="" class="animate__animated animate__pulse" style="animation-duration: 7s; animation-iteration-count: infinite;"></div>
 			<div class="project-info">
 				<p style="font-weight: lighter;"><span style="color: #FF5C00; font-weight: bold;">ALAMO DRAFT HOUSE |</span> rewards program marketing campaign</p>
@@ -192,7 +183,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="project-container" data-aos="fade-right" data-aos-duration="1200" data-aos-once="true">
+		<div class="project-container">
 			<div class="mobile-project-img"><img src="assets/altura.png" alt="" class="animate__animated animate__pulse" style="animation-duration: 5s; animation-iteration-count: infinite;"></div>
 			<div class="project-info">
 				<p style="font-weight: lighter;"><span style="color: #FF5C00; font-weight: bold;">ALTURA |</span> educational program marketing campaign</p>

@@ -139,7 +139,7 @@
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   background-color: #FF5C00;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 3%;
@@ -156,7 +156,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 3%;
@@ -395,9 +395,60 @@
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
  }
 
- .main-header { 
+ /* MOBILE MEUNU STYLES */
+ #mobile-menu { 
   display: none;
  }
+
+ .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
 
  /* MEDIA QUERIES */
  @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -408,113 +459,21 @@
       display: none;
     }
   
-    .main-header {
+    #mobile-menu {
       display: contents;
     }
 
-    nav {
-      padding-right: 10%;
-      padding-left: 10%;
-    }
-  
-    .main-header nav {
-      padding-top: 2em;
-    }
-  
-    .masthead {
-      align-items: center;
+    .hamburger-holder {
       display: flex;
       justify-content: space-between;
-      margin-bottom: 1.5em;
+      width: 100%;
+      padding-top: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
     }
-    .masthead img {
+
+    .hamburger-holder img {
       width: 20%;
-    }
-  
-    .main-header a{
-      color: white;
-      letter-spacing: 3px;
-    }
-  
-    .main-header a:hover {
-      color: black;
-    }
-  
-    .burger{
-        cursor: pointer;
-        display: block;
-        width: 30px;
-    }
-  
-    .burger div{
-        background-color: black;
-        border-radius: 25px;
-        height: 2.3px;
-        transition-duration: .25s;
-        transition-timing-function: cubic-bezier(.6,.13,.32,1.46);
-    }
-  
-    .burger .one,
-    .burger .two{
-        margin-bottom: 8px;
-    }
-  
-    .main-nav-list{
-        z-index: 999;
-        background-color: black;
-        position: fixed;
-        width: 100%;
-        padding: 4%;
-        transition-property: transform;
-        transform: scale(1,0);
-        transform-origin: top;
-        transition-duration: .25s;
-        transition-timing-function: cubic-bezier(.6,.13,.32,1.46);  
-    }
-  
-    .main-nav-list a{
-        display: block;
-        font-size: 1.2em;
-        margin-bottom: 8px;
-        transition-property: opacity;
-        opacity: 0;
-        transition-duration: .15s;
-    }
-  
-    .menu-toggle{
-        display: none;
-    }
-  
-  
-    #input__menu-toggle:checked ~ .masthead .burger .one{
-        box-shadow: 1px .4px 10px rgba(0,0,0,.25);
-        transform-origin: left;
-        transform: translate(15%, -5px) rotate(45deg);
-    }
-  
-    #input__menu-toggle:checked ~ .masthead .burger .two{
-        background-color: transparent;
-        box-shadow: none;
-    }
-  
-    #input__menu-toggle:checked ~ .masthead .burger .three{
-        background-color: var(--secondary-color);
-        box-shadow: 1px .4px 10px rgba(0,0,0,.25);
-        transform-origin: left;
-        transform: translate(14%, 2px) rotate(-45deg); 
-    }
-  
-    #input__menu-toggle:checked ~.main-nav-list{
-        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.14);
-        transform:scale(1,1);
-    }
-  
-  
-    #input__menu-toggle:checked ~ .main-nav-list a{
-        transition-property: opacity;
-        opacity: 1;
-        transition-delay: .2s;
-        transition-duration: .1s;
     }
 
     .i-do {
@@ -578,6 +537,8 @@
 
     .left-border {
       padding-left: 5%;
+      margin-top: 10%;
+      padding-bottom: 15%
     }
 
     .left-border p {
@@ -607,5 +568,10 @@
     .mobile-project-img {
       width: 100%;
     }
+
+    .web-dev .project-container {
+      margin-bottom: 15%;
+      padding-bottom: 20%;
+     }
 
  }
