@@ -235,7 +235,7 @@
  }
 
  .mobile-project-img img {
-  width: 55%;
+  width: 40%;
  }
 
  .project-info {
@@ -477,6 +477,11 @@
     .hamburger-holder img {
       width: 20%;
     }
+
+    .hero {
+      padding-top: 20%;
+      padding-bottom: 20%;
+     }
 
     .i-do {
         clip-path: polygon(0 3.5%, 100% 0, 100% 100%, 0 100%);
