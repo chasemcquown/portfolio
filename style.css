@@ -520,4 +520,8 @@
       width: 5%;
     }
 
+    .project-container, .web-dev .project-container {
+      flex-direction: column;
+    }
+
  }
