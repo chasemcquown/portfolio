@@ -342,6 +342,14 @@
   padding-bottom: 6%; 
  }
 
+ .left-border p {
+  font-size: 2em;
+ }
+
+ .left-border a {
+  font-size: 1.4em;
+ }
+
  .left-border {
   position: relative;
   padding-left: 1.6%;
@@ -555,6 +563,22 @@
 
     .digital-marketing {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+    }
+
+    .left-border {
+      padding-left: 5%;
+    }
+
+    .left-border p {
+      font-size: 1.3em;
+    }
+
+    .left-border a {
+      font-size: 1em;
+    }
+
+    .footer-icons img {
+      width: 8%;
     }
 
  }
