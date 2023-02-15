@@ -391,10 +391,6 @@
   transform: scale(1.1);
  }
 
- .footer-icons a img:hover {
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
- }
-
  /* MOBILE MEUNU STYLES */
  #mobile-menu { 
   display: none;
@@ -553,7 +549,7 @@
     }
 
     .left-border a {
-      font-size: 1em;
+      font-size: 1.3em;
     }
 
     .footer-icons img {
